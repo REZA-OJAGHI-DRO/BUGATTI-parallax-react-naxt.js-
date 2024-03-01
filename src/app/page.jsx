@@ -16,21 +16,61 @@ export default function Home() {
   const x=useRef()
   const scrollRef=useRef()
 
-  useEffect(() => {
-    const handleSmoothScroll = (e) => {
-      const delta = e.deltaY; 
-      scrollRef.current.scrollTop += delta * 2; 
-      e.preventDefault(); 
-    };
+  // useEffect(() => {
+  //   const handleSmoothScroll = (e) => {
+  //     const delta = e.deltaY; 
+  //     scrollRef.current.scrollTop += delta * 2; 
+  //     e.preventDefault(); 
+  //   };
 
-    scrollRef.current.addEventListener('wheel', handleSmoothScroll);
+  //   scrollRef.current.addEventListener('wheel', handleSmoothScroll);
 
-    return () => {
-      scrollRef.current.removeEventListener('wheel', handleSmoothScroll);
-    };
-  }, []);
+  //   return () => {
+  //     scrollRef.current.removeEventListener('wheel', handleSmoothScroll);
+  //   };
+  // }, []);
 
+  
+    // const startYRef = useRef(null);
+  
+    useEffect(() => {
+      const handleTouchStart = (event) => {
+        scrollRef.current = event.touches[0].clientY;
+      };
+  
+      const handleTouchMove = (event) => {
+        if (scrollRef.current !== null) {
+          // محاسبه فاصله حرکت انگشت
+          const distance = event.touches[0].clientY - scrollRef.current;
+  
+          // محاسبه سرعت و گام حرکت اسکرول
+          const speed = 10; // مثال: 1 واحد در هر ثانیه
+          const scrollStep = distance * speed;
+  
+          // اجرای عملیات اسکرول با گام تنظیم شده
+          window.scrollBy(0, scrollStep);
+  
+          // بهروزرسانی موقعیت شروع تاچ
+          scrollRef.current = event.touches[0].clientY;
+        }
+      };
+  
+      const handleTouchEnd = () => {
+        scrollRef.current = null;
+      };
+  
+      
+      window.addEventListener('touchstart', handleTouchStart);
+      window.addEventListener('touchmove', handleTouchMove);
+      window.addEventListener('touchend', handleTouchEnd);
 
+      return () => {
+        window.removeEventListener('touchstart', handleTouchStart);
+        window.removeEventListener('touchmove', handleTouchMove);
+        window.removeEventListener('touchend', handleTouchEnd);
+      };
+    }, []);
+  
 
   function scroll(e){
     const st=e.target.scrollTop
@@ -50,7 +90,7 @@ export default function Home() {
   }
   return (
     <main className="w-[100%] overflow-hidden h-[100vh]">
-      <div ref={scrollRef} onScroll={()=>scroll(event)} className="w-[calc(100%+25px)] h-[100vh] overflow-y-scroll relative">
+      <div ref={scrollRef} on onScroll={()=>scroll(event)} className="w-[calc(100%+25px)] h-[100vh] overflow-y-scroll relative">
         {/* <div className="w-[5rem] h-[3rem] bg-slate-800 text-white fixed top-0 z-50">{Math.floor(sT)}</div> */}
         <S3/>
         <S2/>
