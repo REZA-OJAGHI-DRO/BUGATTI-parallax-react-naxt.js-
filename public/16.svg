@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>FC</title>
+    <g id="Menu-|-Footer-|-LS-|-FC" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="FC-Default-Multi-Mobile-375-x-665-French" transform="translate(-27.000000, -647.000000)" stroke="#FFFFFF" stroke-width="0.9">
+            <g id="Group-9-Copy-2" transform="translate(22.000000, 645.000000)">
+                <g id="Group-8" transform="translate(5.000000, 2.000000)">
+                    <circle id="Oval" cx="8" cy="8" r="7.55"></circle>
+                    <g id="Group" transform="translate(5.600000, 4.400000)">
+                        <path d="M0,0 C0,0.038312035 0,0.806638269 0,2.3049787 C0,3.80331913 0,5.30165957 0,6.8 L3.38719812,6.8 L3.38719812,0 L0,0 Z" id="Path"></path>
+                        <line x1="0" y1="2.3049787" x2="3.38719812" y2="2.3049787" id="Path-2"></line>
+                        <path d="M3.38719812,2.73019594 C4.02418951,2.13975805 4.3426852,2.25291759 4.3426852,3.06967456 C4.3426852,3.88643153 4.3426852,4.7998955 4.3426852,5.81006645 C5.04855086,6.43402738 5.40148369,6.43402738 5.40148369,5.81006645 C5.40148369,4.87412506 5.84877564,3.09678651 5.40053731,3.4 C5.10171175,3.60214233 5.10171175,3.23713523 5.40053731,2.3049787 C5.53394675,2.04296288 5.39809098,1.699076 4.99297002,1.27331806 C4.58784905,0.847560127 4.37108745,0.423120772 4.3426852,0 L3.38719812,0" id="Path-3"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

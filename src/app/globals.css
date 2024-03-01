@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    scroll-snap-stop: always;
+    overscroll-behavior-y: contain;
+    overscroll-behavior-x: none;
+    touch-action: pan-y;
+}
+
+.g{
+    grid-area: 1/1/2/2;
+}
+.s{
+    backdrop-filter: blur(20px);
+}
+ .s::-webkit-scrollbar{
+    width: 5px;
+ }
+ .s::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 20px;
+ }
+ .s::-webkit-scrollbar-track{
+    background-color: rgba(118, 118, 118, 0.635);
+ }
