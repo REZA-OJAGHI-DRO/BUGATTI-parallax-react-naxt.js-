@@ -7,7 +7,7 @@ export default function S1() {
   return (
     <section
       style={{ left: sec1, top: -sec1 }}
-      className="w-[100%] h-[100vh] overflow-hidden relative z-30"
+      className="w-[100vw] h-[100vh] overflow-hidden relative z-30"
     >
       <video
         src="/1.mp4"

@@ -19,7 +19,7 @@ export default function Home() {
   useEffect(() => {
     const handleSmoothScroll = (e) => {
       const delta = e.deltaY; 
-      scrollRef.current.scrollTop += delta * 2; 
+      scrollRef.current.scrollTop += delta * .5; 
       e.preventDefault(); 
     };
 
@@ -30,49 +30,7 @@ export default function Home() {
     };
   }, []);
 
-  // const [isScrolled, setIsScrolled] = useState(false);
 
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     if (window.scrollY > 0 && !isScrolled) {
-  //       setIsScrolled(true);
-  //     } else if (window.scrollY === 0 && isScrolled) {
-  //       setIsScrolled(false);
-  //     }
-  //   };
-
-  //   window.addEventListener('scroll', handleScroll);
-
-  //   return () => {
-  //     window.removeEventListener('scroll', handleScroll);
-  //   };
-  // }, [isScrolled]);
-
-  // const [scrollPosition, setScrollPosition] = useState(0);
-
-  // useEffect(() => {
-  //   let intervalId;
-
-  //   const startScrollAnimation = () => {
-  //     intervalId = setInterval(() => {
-  //       setScrollPosition((prevPosition) => prevPosition + 100);
-
-  //       // اضافه کردن هر گام انیمیشن به ارتفاع صفحه
-  //       window.scrollTo(0, scrollPosition);
-
-  //       // اگر به انتهای اسکرول رسیدید، clearInterval را فراخوانی کنید
-  //       if (scrollPosition >= document.body.scrollHeight) {
-  //         clearInterval(intervalId);
-  //       }
-  //     }, 1000);
-  //   };
-
-  //   startScrollAnimation();
-
-  //   return () => {
-  //     clearInterval(intervalId); // پاک کردن interval در هنگام انتقال به بخش دیگر یا خروج از صفحه
-  //   };
-  // }, [scrollPosition]);
 
   function scroll(e){
     const st=e.target.scrollTop
@@ -92,7 +50,6 @@ export default function Home() {
   }
   return (
     <main className="w-[100%] overflow-hidden h-[100vh]">
-      {/* <div className={isScrolled ? 'smooth-scroll-active' : ''}> */}
       <div ref={scrollRef} onScroll={()=>scroll(event)} className="w-[calc(100%+25px)] h-[100vh] overflow-y-scroll relative">
         {/* <div className="w-[5rem] h-[3rem] bg-slate-800 text-white fixed top-0 z-50">{Math.floor(sT)}</div> */}
         <S3/>
@@ -100,7 +57,6 @@ export default function Home() {
         <S1/>
         <div ref={x} className="w-[100%] h-[100vh]"></div>
       </div>
-      {/* </div> */}
     </main>
   );
 }

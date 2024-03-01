@@ -2,20 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
+/* html{
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
     scroll-snap-stop: always;
     overscroll-behavior-y: contain;
     overscroll-behavior-x: none;
     touch-action: pan-y;
-}
+} */
 
-.smooth-scroll-active {
-    transition: transform 0.3s ease-out;
-    transform: translateY(-20px); 
-  }
-  
 
 .g{
     grid-area: 1/1/2/2;

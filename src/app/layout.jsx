@@ -61,7 +61,7 @@ export default function RootLayout({ children }) {
   const load=useRef()
   setTimeout(()=>{
     load.current.style.display='none'
-  },4000)
+  },1000)
 
   return (
     <html lang="en" className="bg-black">
