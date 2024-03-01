@@ -11,6 +11,12 @@ html{
     touch-action: pan-y;
 }
 
+.smooth-scroll-active {
+    transition: transform 0.3s ease-out;
+    transform: translateY(-20px); 
+  }
+  
+
 .g{
     grid-area: 1/1/2/2;
 }
