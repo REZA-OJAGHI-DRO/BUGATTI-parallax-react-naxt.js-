@@ -3,7 +3,7 @@
 
 ![Screenshot (71)](https://github.com/REZA-OJAGHI-DRO/BUGATTI-parallax-react-naxt.js-/assets/145910720/58f2ce25-f780-4975-af1a-9c65e6effdce)
 
-- [Demo Project(VPN)](https://game-sudoku-6fdo.vercel.app/)
+- [Demo Project(VPN)](https://bugatti-parallax-react-naxt-git-efb0ac-rezas-projects-a378c585.vercel.app/)
  
 - Developed by reza ojaghi
 
