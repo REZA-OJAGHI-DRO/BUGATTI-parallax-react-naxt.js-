@@ -1,7 +1,7 @@
 # BUGATTI-parallax-react-naxt.js-
 **If you have a lot of information to display on your site, why don't you use my accordion menu**
 
-![Screenshot (67)](https://github.com/REZA-OJAGHI-DRO/game-sudoku/assets/145910720/d3ce15e5-50a4-4106-8ee9-ed6c96f7dbc8)
+![Screenshot (71)](https://github.com/REZA-OJAGHI-DRO/BUGATTI-parallax-react-naxt.js-/assets/145910720/58f2ce25-f780-4975-af1a-9c65e6effdce)
 
 - [Demo Project(VPN)](https://game-sudoku-6fdo.vercel.app/)
  
