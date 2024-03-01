@@ -19,7 +19,7 @@ export default function Home() {
   useEffect(() => {
     const handleSmoothScroll = (e) => {
       const delta = e.deltaY; 
-      scrollRef.current.scrollTop += delta * .5; 
+      scrollRef.current.scrollTop += delta * 2; 
       e.preventDefault(); 
     };
 
